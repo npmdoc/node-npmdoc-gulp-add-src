@@ -56,6 +56,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-add-src.gulp-add-src">
+            function <span class="apidocSignatureSpan"></span>gulp-add-src
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.gulp-add-src.append">
             function <span class="apidocSignatureSpan">gulp-add-src.</span>append
             <span class="apidocSignatureSpan">()</span>
@@ -78,6 +87,22 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gulp-add-src" id="apidoc.module.gulp-add-src">module gulp-add-src</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-add-src.gulp-add-src" id="apidoc.element.gulp-add-src.gulp-add-src">
+        function <span class="apidocSignatureSpan"></span>gulp-add-src
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gulp-add-src = function () {
+	var pass = through.obj();
+	return es.duplex(pass, es.merge(vinyl.src.apply(vinyl.src, arguments), pass));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
