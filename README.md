@@ -1,9 +1,14 @@
-# api documentation for  [gulp-add-src (v0.2.0)](https://github.com/urish/gulp-add-src)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-add-src.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-add-src) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-add-src.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-add-src)
+# npmdoc-gulp-add-src
+
+#### api documentation for  [gulp-add-src (v0.2.0)](https://github.com/urish/gulp-add-src)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-add-src.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-add-src) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-add-src.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-add-src)
+
 #### Add more 'src' files at any point in the pipeline (gulp plugin)
 
-[![NPM](https://nodei.co/npm/gulp-add-src.png?downloads=true)](https://www.npmjs.com/package/gulp-add-src)
+[![NPM](https://nodei.co/npm/gulp-add-src.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-add-src)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-add-src/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp-add-src_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-add-src/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-add-src/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-add-src/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-add-src/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-add-src/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-add-src/build/screenCapture.npmPackageListing.svg)
 
@@ -50,13 +55,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "urish",
-            "email": "uri@urish.org"
+            "name": "urish"
         }
     ],
     "name": "gulp-add-src",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/urish/gulp-add-src.git"
@@ -66,60 +69,6 @@
     },
     "version": "0.2.0"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-add-src](#apidoc.module.gulp-add-src)
-1.  [function <span class="apidocSignatureSpan">gulp-add-src.</span>append ()](#apidoc.element.gulp-add-src.append)
-1.  [function <span class="apidocSignatureSpan">gulp-add-src.</span>prepend ()](#apidoc.element.gulp-add-src.prepend)
-
-
-
-# <a name="apidoc.module.gulp-add-src"></a>[module gulp-add-src](#apidoc.module.gulp-add-src)
-
-#### <a name="apidoc.element.gulp-add-src.append"></a>[function <span class="apidocSignatureSpan">gulp-add-src.</span>append ()](#apidoc.element.gulp-add-src.append)
-- description and source-code
-```javascript
-function append() {
-	var pass = through.obj();
-	return es.duplex(pass, streamqueue({ objectMode: true }, pass, vinyl.src.apply(vinyl.src, arguments)));
-}
-```
-- example usage
-```shell
-...
-			].sort());
-			done();
-		});
-	});
-
-	it('should append files to an existing stream in order', function (done) {
-		var stream = gulp.src(['index.js', 'test.js'])
-			.pipe(addsrc.append(['package.json', 'README.md']));
-
-		var allFiles = [];
-		stream.on('error', done);
-		stream.on('data', function (file) {
-			allFiles.push(file.path);
-		});
-		stream.on('end', function() {
-...
-```
-
-#### <a name="apidoc.element.gulp-add-src.prepend"></a>[function <span class="apidocSignatureSpan">gulp-add-src.</span>prepend ()](#apidoc.element.gulp-add-src.prepend)
-- description and source-code
-```javascript
-function prepend() {
-    var pass = through.obj();
-    return es.duplex(pass, streamqueue({ objectMode: true }, vinyl.src.apply(vinyl.src, arguments), pass));
-}
-```
-- example usage
-```shell
-n/a
 ```
 
 
