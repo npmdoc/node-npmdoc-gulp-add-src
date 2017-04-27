@@ -1,6 +1,6 @@
 # npmdoc-gulp-add-src
 
-#### api documentation for  [gulp-add-src (v0.2.0)](https://github.com/urish/gulp-add-src)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-add-src.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-add-src) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-add-src.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-add-src)
+#### basic api documentation for  [gulp-add-src (v0.2.0)](https://github.com/urish/gulp-add-src)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-add-src.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-add-src) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-add-src.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-add-src)
 
 #### Add more 'src' files at any point in the pipeline (gulp plugin)
 
@@ -67,7 +67,8 @@
     "scripts": {
         "test": "mocha"
     },
-    "version": "0.2.0"
+    "version": "0.2.0",
+    "bin": {}
 }
 ```
 
